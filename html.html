@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Live Instructional Video</title>
+    <style>
+      /* Define the grid container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 10px;
+        height: 100vh;
+      }
+
+      /* Style the video elements */
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Style the emotional status indicator */
+      .emotional-status {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>
+        <h1>Live Instructional Video</h1>
+        <video src="live-instructional-video.mp4" controls autoplay></video>
+      </div>
+      <div>
+        <h2>Student Video</h2>
+        <video src="student-video.mp4" controls autoplay></video>
+        <div class="emotional-status">Emotional Status: Happy</div>
+      </div>
+    </div>
+  </body>
+</html>
